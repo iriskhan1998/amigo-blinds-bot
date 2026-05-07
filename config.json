@@ -1,0 +1,48 @@
+{
+  "rate_mode": "fixed",
+  "cbr_rate": null,
+  "markup_pct": 0.0,
+  "fixed_rate": 60.0,
+  "final_rate": 60.0,
+  "manual_disc": 0.0,
+  "last_mech_l": "UNI 2",
+  "last_mech_p": "UNI2-ЗЕБРА",
+  "last_cat": "1",
+  "discount_levels": [
+    {
+      "min": 0,
+      "max": 15000,
+      "pct": 0
+    },
+    {
+      "min": 15000,
+      "max": 30000,
+      "pct": 5
+    },
+    {
+      "min": 30000,
+      "max": 50000,
+      "pct": 8
+    },
+    {
+      "min": 50000,
+      "max": 75000,
+      "pct": 10
+    },
+    {
+      "min": 75000,
+      "max": 125000,
+      "pct": 15
+    },
+    {
+      "min": 125000,
+      "max": 250000,
+      "pct": 18
+    },
+    {
+      "min": 250000,
+      "max": null,
+      "pct": 21
+    }
+  ]
+}

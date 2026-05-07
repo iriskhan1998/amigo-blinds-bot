@@ -1,0 +1,13 @@
+app = "amigo-blinds-bot"
+primary_region = "fra"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[[vm]]
+  memory = "256mb"
+  cpu_kind = "shared"
+  cpus = 1
+
+[restart]
+  policy = "always"
