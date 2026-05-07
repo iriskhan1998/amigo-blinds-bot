@@ -6,7 +6,7 @@ from pathlib import Path
 
 # Токен читается из переменной окружения BOT_TOKEN (Fly.io secret).
 # Для локального запуска можно вписать сюда или задать переменную окружения.
-TOKEN = ""
+TOKEN = "8769848294:AAH9a-4ggyy_5aCzbLdjUktdZsjn7q2rtrk"
 
 import aiohttp
 from telegram import (
