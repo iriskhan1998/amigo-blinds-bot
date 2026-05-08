@@ -137,8 +137,11 @@ def parse_dims(text):
         m = _DIM_RE.search(line.strip())
         if not m:
             continue
-        w = float(m.group(1).replace(",", ".")) / 100
-        h = float(m.group(2).replace(",", ".")) / 100
+        w_raw = float(m.group(1).replace(",", "."))
+        h_raw = float(m.group(2).replace(",", "."))
+        # < 10 → уже в метрах (0.65м); >= 10 → в сантиметрах (65см → 0.65м)
+        w = w_raw if w_raw < 10 else w_raw / 100
+        h = h_raw if h_raw < 10 else h_raw / 100
         t = "л" if m.group(3).lower() in ("л", "l") else "п"
         items.append({"w": w, "h": h, "type": t, "desc": m.group(4).strip()})
     return items
